@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="GM Binder: Firearms" type="Source" source="Core" id="ID_GM_BINDER_SOURCE_FIREARMS">
+		<description>
+			<p>
+				<strong>Firearms in the Realms</strong>
+			</p>
+			<p>Firearms are becoming more and more widespread in Faerûn as Lantanese priests of Gond the Wondermaker are making and spreading them throughout the Realms.</p>
+			<p>The Lantanese have mastered matchlock weapons-making, and can regularly produce high-quality matchlock pistols, matchlock arquebuses, matchlock calivers, and matchlock muskets (with gun rests). They can also produce hand match ribalds for armies, as well as matchlock blunderbusses. All Lantanese firearms are stamped with the mark of Gond on the butt or grip of the weapon.</p>
+			<p>Very large, crude bombards are made and used by the Red Wizards of Thay, and some of these siege guns are in the Pirate Isles.</p>
+			<p>One important development is that firearms are entering numerous worlds from sources in wildspace. Wheellock pistols known as “starwheels” are sometimes sold or traded across Toril by spelljammer crews, or they are stolen from crews by local thieves. The Lantanese were quick to copy the design of these "starwheels", and have started producing them "locally".</p>
+		</description>
+		<setters>
+			<set name="abbreviation">GMBF</set>
+			<set name="url">https://www.gmbinder.com/share/-LaQ-9bfLBNNBm-hoMee</set>
+			<set name="author" abbreviation="GMB" url="https://www.gmbinder.com/">GM Binder</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+
+	<element name="Firearms" type="Option" source="GM Binder: Firearms" id="ID_GM_BINDER_OPTION_FIREARMS">
+		<description>
+			<p>Firearms are becoming more and more widespread in Faerûn as Lantanese priests of Gond the Wondermaker are making and spreading them throughout the Realms.</p>
+			<p>The Lantanese have mastered matchlock weapons-making, and can regularly produce high-quality matchlock pistols, matchlock arquebuses, matchlock calivers, and matchlock muskets (with gun rests). They can also produce hand match ribalds for armies, as well as matchlock blunderbusses. All Lantanese firearms are stamped with the mark of Gond on the butt or grip of the weapon.</p>
+			<p>Very large, crude bombards are made and used by the Red Wizards of Thay, and some of these siege guns are in the Pirate Isles.</p>
+			<p>One important development is that firearms are entering numerous worlds from sources in wildspace. Wheellock pistols known as “starwheels” are sometimes sold or traded across Toril by spelljammer crews, or they are stolen from crews by local thieves. The Lantanese were quick to copy the design of these "starwheels", and have started producing them "locally".</p>
+		</description>
+		<setters>
+			<set name="short">You can introduce gunpowder to your campaign.</set>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-LaQ-9bfLBNNBm-hoMee</set>
+		</setters>
+	</element>
+
+	<!-- firearms Items -->
+	<element name="Gunpowder, Powder Horn" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_GUNPOWDER_POWDER_HORN">
+		<description>
+			<p>Gunpowder is chiefly used to propel a bullet out of the barrel of a pistol or rifle, or it is formed into a bomb. Gunpowder is sold in small wooden kegs and in waterresistant powder horns.</p>
+			<p class="indent">Setting fire to a container full of gunpowder can cause it to explode, dealing fire damage to creatures within 10 feet of it (3d6 for a powder horn, 7d6 for a keg). A successful DC 12 Dexterity saving throw halves the damage. Setting fire to an ounce of gunpowder causes it to flare for 1 round, s hedding br ight light in a 30-foot radius and dim light for an add itional 30 feet.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Shou Rocket." type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_SHOU_ROCKET">
+		<description>
+			<p>Explosive rockets used as portable (if somewhat inaccurate) siege or support weapons in the Shou Empire of Kara-Tur; Shou rockets are fired off of a reusable wooden sled (4 lbs, 5 sp) that aims the weapon.</p>
+			<p class="indent">As an action, a character can light the rocket and aim it a point up to 60 feet away. The rocket flies towards the chosen point and each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take 3d6 fire damage.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="fire">3d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Grenade" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_GRENADE">
+		<description>
+			<p>A grenade is a ball-sized iron spheres packed with gunpowder and fitted with a slow-burning wick. As an action, a creature can light a grenade and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw, taking 3d6 piercing damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="piercing">3d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Smokepowder, keg" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_SMOKEPOWDER_KEG">
+		<description>
+			<p>Smokepowder functions as Gunpowder does, as detailed on page 267 of the Dungeon Master's Guide, except as follows: Smokepowder is an Uncommon wondrous item, it explodes if set on fire, dropped, or otherwise handled roughly, it deals the listed damage in a 20-foot radius when it explodes, setting fire to an ounce of it causes a small explosion rather than a slow burn, and casting dispel magic on it renders it permanently inert.</p>
+			<p class="indent">Besides ammunition, all firearms also require magical smokepowder to function. A packet contains enough powder for 5 shots of a firearm, while a keg holds enough powder for 500 shots</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="damage" type="fire">7d6</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+
+	<element name="Smokepowder, packet" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_SMOKEPOWDER_PACKET">
+		<description>
+			<p>Smokepowder functions as Gunpowder does, as detailed on page 267 of the Dungeon Master's Guide, except as follows: Smokepowder is an Uncommon wondrous item, it explodes if set on fire, dropped, or otherwise handled roughly, it deals the listed damage in a 20-foot radius when it explodes, setting fire to an ounce of it causes a small explosion rather than a slow burn, and casting dispel magic on it renders it permanently inert.</p>
+			<p class="indent">Besides ammunition, all firearms also require magical smokepowder to function. A packet contains enough powder for 5 shots of a firearm, while a keg holds enough powder for 500 shots</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.5">0.5 lb.</set>
+			<set name="damage" type="fire">1d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Foeshredder" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_FOESHREDDER">
+		<description>
+			<p>A foeshredder is a specialized grenade with an attached handle, allowing it to be thrown twice as far. A foeshredder functions identically to a grenade except that it can be thrown up to 120 feet away</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="damage" type="piercing">3d6</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Smokebomb" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_SMOKEBOMB">
+		<description>
+			<p>A smokebomb consists of a wooden tube filled with alchemical compounds and smokepowder. As an action, a creature can light a smokebomb and throw it at a point up to 60 feet away. One round after a smokebomb lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round.</p>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Proficiencies and Weapons-->
+	<element name="Weapon Proficiency (Pistol)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_PISTOL">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Pistol" />
+	</element>
+	<element name="Pistol" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+		<description>The smallest and most compact firearm, the pistol is also one of the rarest firearms, as most people not only prefer firearms with longer range, but the pistol itself requires greater craftsmanship to craft.
+
+Despite its short range, a pistol is still a formidable weapon, and is often used as a self-defense weapon. Due to this, pistol grips often have metal butts that allow them to be used as effective clubs.</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">50/150</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_PISTOL</set>
+			<!-- <set name="ammunition">ID_GM_BINDER_ITEM_BULLET</set> -->
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Musket)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_MUSKET">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Musket" />
+	</element>
+	<element name="Musket" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_MUSKET">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GM_BINDER_WEAPON_PROPERTY_HOOKED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY ,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>A marskman's gun, a musket has long barrel three to four feet long and a heavy wooden stock, allowing for greater accuracy than all other firearms.</p>
+			<p>A lantanese musket comes with a pivoting fork integrated into the design, increasing the weapon's cost and weight accordingly.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/600</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="rarity">uncommon</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_MUSKET</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Blunderbus)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_BLUNDERBUS">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Blunderbus" />
+	</element>
+	<element name="Blunderbus" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_BLUNDERBUS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>The shortest of the long guns, a blunderbuss only has a barrel around one foot long, sometimes less, which often ends in a flared muzzle. Most blunderbusses have a full stock, but some are made with only a pistol grip.</p>
+			<p class="indent">The blunderbuss is the preferred weapon of clerics of Gond, and is often called a "Gondgun" by others.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">60/240</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="rarity">uncommon</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_BLUNDERBUS</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Arquebus)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_ARQUEBUS">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Arquebus" />
+	</element>
+	<element name="Arquebus" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_ARQUEBUS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>A scaled down version of the much larger musket, the arquebus is the long gun most adventurers are likely to encounter, as it strikes a good balance between size and power. An arquebus usually has a full stock, but many only have a cut-down stock.</p>
+			<p class="indent">Spelljammer crews carry arquebuses as their long gun of choice.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="rarity">uncommon</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_ARQUEBUS</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Caliver)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_CALIVER">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Caliver" />
+	</element>
+	<element name="Caliver" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_CALIVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>Essentially half-way between a musket and an arquebus, a caliver has a higher bore and heavier barrel than the arquebus, but is otherwise identical in design.</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="rarity">uncommon</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_CALIVER</set>
+		</setters>
+	</element>
+	<element name="Caliver (Starwheel)" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_CALIVER_STARWHEEL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM_STARWHEEL</supports>
+		<description>Essentially half-way between a musket and an arquebus, a caliver has a higher bore and heavier barrel than the arquebus, but is otherwise identical in design.</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="rarity">uncommon</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_CALIVER</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Arquebus)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_ARQUEBUS">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Arquebus" />
+	</element>
+	<element name="Arquebus" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_ARQUEBUS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+		<description>
+			<p>A scaled down version of the much larger musket, the arquebus is the long gun most adventurers are likely to encounter, as it strikes a good balance between size and power. An arquebus usually has a full stock, but many only have a cut-down stock.</p>
+			<p>Spelljammer crews carry arquebuses as their long gun of choice.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="rarity">common</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_ARQUEBUS</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Handgunne)" type="Proficiency" source="GM Binder: Firearms" id="ID_GM_BINDER_PROFICIENCY_WEAPON_HANDGUNNE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+		<requirements>ID_GM_BINDER_OPTION_FIREARMS</requirements>
+		<sheet alt="Handgunne" />
+	</element>
+	<element name="Handgunne" type="Weapon" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_HANDGUNNE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GM_BINDER_WEAPON_PROPERTY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GM_BINDER_WEAPON_PROPERTY_HOOKED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY ,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>The most basic firearm, a handgunne is a miniature cannon fitted on the end of a long pole. This pole functions as the weapon's "fork" for the purpose of hooking, and is integrated into the weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="piercing">3d6</set>
+			<set name="rarity">uncommon</set>
+			<set name="proficiency">ID_GM_BINDER_PROFICIENCY_WEAPON_HANDGUNNE</set>
+		</setters>
+	</element>
+
+	<!-- Magic Items -->
+	<element name="Twin-Fire Firearm" type="Magic Item" source="GM Binder: Firearms" id="ID_GM_BINDER_MAGIC_ITEM_TWIN_FIRE_FIREARM">
+		<description>
+			<p>This magic starwheel firearm has two parallel barrels, either side by side or one over the other. Each barrel has its own trigger and finely crafted wheellock mechanism, far more complex and intricate that that on a normal starwheel.</p>
+			<p>Each barrel can be fired separately, or both can be fired at the same time, allowing you to perform two attacks instead of one. These attacks must both target the same creature and your range is halved for them.</p>
+			<p>Each barrel can be reloaded separately, or both barrels can be reloaded as an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">firearm</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="a simple or martial firearm property">Weapon</set>
+			<set name="rarity">common</set>
+			<set name="enhancement">0</set>
+			<set name="attunement">false</set>
+			<set name="weapon">ID_GM_BINDER_WEAPON_PROPERTY_FIREARM_STARWHEEL, ID_INTERNAL_DAMAGE_TYPE_PIERCING</set>
+			<set name="name-format">Twin-Fire {{parent}}</set>
+		</setters>
+	</element>
+
+	<!-- Ammunition -->
+	<element name="Bullet" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_BULLET">
+		<description>
+			<p>Bullets are lead spheres used for single target attacks. When loaded with a bullet, a firearm functions as written.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Lead Shot" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_LEAD_SHOT">
+		<description>
+			<p>Lead shot consists of many tiny lead balls that are packed into the barrel of the firearm together.</p>
+			<p>Lead shot can be loaded into any firearm that normally fires bullets. Loading a firearm with lead shot halves its Normal and Long Ranges, but imparts the Spread property on the attack.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Handgunne Balls" type="Item" source="GM Binder: Firearms" id="ID_GM_BINDER_ITEM_HANDGUNNE_BALLS">
+		<description>
+			<p>Handgunnes shoot heavy lead balls that are simply smaller versions of cannon balls. The price given is for 1 ball.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Firearm" type="Weapon Property" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_PROPERTY_FIREARM">
+		<description>
+			<p>The firearm property functions as the Ammunition and Loading properties, except that you can forego one attack or use a bonus action to reload it in order to fire it again on the same turn. Reloading a firearm requires two hands.</p>
+			<p>As most firearms ignite their powder with a slow burning cord match, a firearm also has a 25% chance (1-5 on your attack roll) of not firing in heavy rain, and a 10% chance (1-2 on your attack roll) of not firing in light rain. A firearm that does not fire wastes the smokepowder used for that shot, but does not waste any ammunition.</p>
+		</description>
+	</element>
+
+	<element name="Hooked" type="Weapon Property" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_PROPERTY_HOOKED">
+		<description>
+			<p>A weapon that has the hooked property is designed to be fired only when hooked onto a special fork (1 gp, 2 lb,) –or over a hard, stationary surface, such as a low wall. Hooking the weapon requires an action or a bonus action (the character’s choice). If the character moves after hooking the weapon, or drops the weapon, the weapon is no longer considered to be hooked. While a weapon with this property is not hooked, attack rolls with it are made at disadvantage unless the character's Strength score is equal to or higher than the number in brackets.</p>
+		</description>
+	</element>
+
+	<element name="Spread" type="Weapon Property" source="GM Binder: Firearms" id="ID_GM_BINDER_WEAPON_PROPERTY_FIREARM_SPREAD">
+		<description>
+			<p>When attacking a target within half this weapon's normal range, roll an additional damage die and add it to the weapon’s damage. When fired at long range, you may apply the attack roll to an additional creature within 5 feet of the target. Roll damage against the secondary target separately.</p>
+		</description>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_PISTOL" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_MUSKET" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_HANDGUNNE" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_BLUNDERBUS" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_ARQUEBUS" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_CALIVER" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+
+
+</elements>
