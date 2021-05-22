@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
+	<info>
+		<update version="0.0.1">
+			<file name="gm-binder-items-firearms.xml" url="https://raw.githubusercontent.com/nardan/aurora-escandanel/main/gm-binder-items-firearms.xml" />
+		</update>
+	</info>
+
 	<element name="GM Binder: Firearms" type="Source" source="Core" id="ID_GM_BINDER_SOURCE_FIREARMS">
 		<description>
 			<p>
@@ -14,7 +20,7 @@
 			<set name="abbreviation">GMBF</set>
 			<set name="url">https://www.gmbinder.com/share/-LaQ-9bfLBNNBm-hoMee</set>
 			<set name="author" abbreviation="GMB" url="https://www.gmbinder.com/">GM Binder</set>
-			<set name="third-party">true</set>
+			<set name="homebrew">true</set>
 		</setters>
 	</element>
 
@@ -388,7 +394,6 @@ Despite its short range, a pistol is still a formidable weapon, and is often use
 			<grant type="Proficiency" id="ID_GM_BINDER_PROFICIENCY_WEAPON_CALIVER" requirements="ID_GM_BINDER_OPTION_FIREARMS" />
 		</rules>
 	</append>
-
 
 
 </elements>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Adventures in Escandanel House Rules</name>
+		<description>Adventures in Escandanel House Rules</description>
+		<update version="0.0.1">
+			<file name="escandanel.index" url="https://raw.githubusercontent.com/nardan/aurora-escandanel/main/escandanel.index" />
+		</update>
+	</info>
+	<files>
+		<file name="escandanel-house-rules.xml" url="https://raw.githubusercontent.com/nardan/aurora-escandanel/main/escandanel-house-rules.xml" />
+		<file name="gm-binder-items-firearms.xml" url="https://raw.githubusercontent.com/nardan/aurora-escandanel/main/gm-binder-items-firearms.xml" />
+	</files>
+</index>

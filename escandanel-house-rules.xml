@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
-    <!-- <element name="Adventures in Escandanel House Rules" type="Source" source="Core" id="ID_ESCANDANEL_HOUSE_RULES">
-        <description>
-            <p>Adventures in Escandanel.</p>
-        </description>
-        <setters>
-            <set name="abbreviation">EHR</set>
-            <set name="homebrew">true</set>
-        </setters>
-    </element> -->
+    <info>
+        <update version="0.0.1">
+            <file name="escandanel-house-rules.xml" url="https://raw.githubusercontent.com/nardan/aurora-escandanel/main/escandanel-house-rules.xml" />
+        </update>
+    </info>
 
     <!-- Wondrous Items -->
     <element name="Bands of Resistance, Fire" type="Magic Item" source="Adventures in Escandanel House Rules" id="ID_ESCANDANEL_HOUSE_RULES_MAGIC_ITEM_BANDS_OF_RESISTANCE_FIRE">
@@ -29,7 +25,11 @@
 
     <element name="Ring of Healing" type="Magic Item" source="Adventures in Escandanel House Rules" id="ID_ESCANDANEL_HOUSE_RULES_MAGIC_ITEM_RING_OF_HEALING">
         <description>
-            <p>While wearing this ring, you can cast the <em>3rd level Cure Wounds (3d8)</em> spell from it as a bonus action at will, but can target only yourself when you do so.</p>
+            <p>
+                While wearing this ring, you can cast the
+                <em>3rd level Cure Wounds (3d8)</em>
+                spell from it as a bonus action at will, but can target only yourself when you do so.
+            </p>
         </description>
         <setters>
             <set name="category">Rings</set>
@@ -58,6 +58,29 @@
         </setters>
         <rules>
             <stat name="ac:shield" value="1" bonus="shield" />
+        </rules>
+    </element>
+
+    <!--shield-->
+    <element name="Tower Shield" type="Armor" source="Adventures in Escandanel House Rules" id="ID_ESCANDANEL_HOUSE_RULES_GEAR_TOWER_SHIELD">
+        <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+        <description>
+            <p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+            <p class="index">Bonus action: Brace +4 AC</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">onehand,secondary</set>
+            <set name="type">Shield</set>
+            <set name="armor">Shield</set>
+            <set name="armorClass">+2</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="shield" />
+            <stat name="speed" value="-5" bonus="armor" requirements="![str:17]" />
         </rules>
     </element>
 </elements>
