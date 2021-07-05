@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="gm-binder-items-firearms.xml" url="https://raw.githubusercontent.com/nardan/aurora-escandanel/main/gm-binder-items-firearms.xml" />
 		</update>
 	</info>
@@ -319,6 +319,53 @@ Despite its short range, a pistol is still a formidable weapon, and is often use
 			<set name="attunement">false</set>
 			<set name="weapon">ID_GM_BINDER_WEAPON_PROPERTY_FIREARM_STARWHEEL, ID_INTERNAL_DAMAGE_TYPE_PIERCING</set>
 			<set name="name-format">Twin-Fire {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Efficient Bandolier" type="Magic Item" source="GM Binder: Firearms" id="ID_GM_BINDER_MAGIC_ITEM_EFFICIENT_BANDOLIER">
+		<description>
+			<p>Each of this bandolier’s eight pouches connects to an extradimensional space that allows the bandolier to hold numerous items while never weighing more than 2 pounds. Each compartment can hold up to 60 bullets, 60 loads of shot, 6 pouches of smokepowder, two one-handed firearms, or one two-handed firearm each.</p>
+			<p class="indent">You can draw any item the bandolier contains as if doing so from a regular pouch.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Lens of Distance" type="Magic Item" source="GM Binder: Firearms" id="ID_GM_BINDER_MAGIC_ITEM_LENS_OF_DISTANCE">
+		<description>
+			<p>This simple glass lens allows the user to see better at longer ranges. On its own it functions as a spyglass, but when it is attached to a firearm it doubles the normal and long ranges of the firearm. Attaching the lens is an action, while detaching it can be done as a bonus action.</p>
+			<p class="indent">The lens has an illusory dot in the center, with an illusory number next to it. The number shows the distance, in feet, between the lens and whatever the dot is overlayed over.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Spyglass of Seeing" type="Magic Item" source="GM Binder: Firearms" id="ID_GM_BINDER_MAGIC_ITEM_SPYGLASS_OF_SEEING">
+		<description>
+			<p>This small tube filled with many alchemical lenses functions as a Lens of Distance, even when used by a character not attuned to it.</p>
+			<p class="indent">If a character attunes to, then that character can also use it as a Gem of Seeing.</p>
+			<p class="indent">(Gem of Seeing)This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.</p>
+			<p class="indent">The gem regains 1d3 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">vision, truesight</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">3</set>
 		</setters>
 	</element>
 
